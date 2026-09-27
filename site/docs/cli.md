@@ -100,7 +100,7 @@ It is configured with environment variables:
 | `OLLAYA_ORIGINS` | unset | Extra browser origins to allow, comma-separated |
 | `OLLAYA_REGISTRY` | `{{SITE_HOST}}` | Default registry host in model names |
 | `OLLAYA_LOG` | `info` | Log levels; `debug` logs every request with its status and duration |
-| `OLLAYA_LOG_DIR` | unset | Log to `<dir>/server.log` instead of stderr |
+| `OLLAYA_LOG_DIR` | unset | Log to `<dir>/server.log` instead of stderr (created if missing; appended, never rotated) |
 
 For the systemd service, change them with `sudo systemctl edit ollaya` and `Environment=` lines.
 

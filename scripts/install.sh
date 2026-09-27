@@ -449,6 +449,7 @@ main() {
 #   Environment="OLLAYA_KEEP_ALIVE=30m"
 #   Environment="OLLAYA_LOG=debug"
 #   Environment="OLLAYA_LOG_DIR=/var/log/ollaya"
+#   LogsDirectory=ollaya
 [Unit]
 Description=Ollaya Service
 After=network-online.target
