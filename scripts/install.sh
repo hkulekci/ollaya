@@ -447,7 +447,8 @@ main() {
 #   [Service]
 #   Environment="OLLAYA_HOST=0.0.0.0:11435"
 #   Environment="OLLAYA_KEEP_ALIVE=30m"
-#   Environment="OLLAYA_DEBUG=1"
+#   Environment="OLLAYA_LOG=debug"
+#   Environment="OLLAYA_LOG_DIR=/var/log/ollaya"
 [Unit]
 Description=Ollaya Service
 After=network-online.target
